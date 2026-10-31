@@ -3,53 +3,44 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b0309">
-  <meta name="description" content="送给欣欣的一颗心：遇见你的时候，心动有了形状。">
-  <title>欣欣，心动有了形状</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23140710'/%3E%3Cpath d='M32 49S12 38 12 24c0-11 14-14 20-5 6-9 20-6 20 5 0 14-20 25-20 25Z' fill='%23ff6f9f'/%3E%3C/svg%3E">
+  <meta name="theme-color" content="#ee9ca7">
+  <meta name="description" content="送给欣欣：和你在一起，把每一个平凡的日子，都过成属于我们的小浪漫。">
+  <title>致欣欣</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23ffdde1'/%3E%3Cpath d='M32 49S12 38 12 24c0-11 14-14 20-5 6-9 20-6 20 5 0 14-20 25-20 25Z' fill='%23ff5e7d'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <main class="love-scene" id="love-scene" aria-labelledby="xinxin-name">
-    <canvas id="heart-canvas" aria-hidden="true"></canvas>
-    <div class="aurora" aria-hidden="true"></div>
-    <svg class="fallback-heart" viewBox="0 0 200 180" aria-hidden="true">
-      <defs>
-        <radialGradient id="heart-fill">
-          <stop offset="0" stop-color="#ff9bbb" stop-opacity=".72"/>
-          <stop offset="1" stop-color="#f3357d" stop-opacity=".18"/>
-        </radialGradient>
-      </defs>
-      <path d="M100 166S18 121 18 62C18 17 74 5 100 45 126 5 182 17 182 62c0 59-82 104-82 104Z" fill="url(#heart-fill)"/>
-    </svg>
-
-    <header class="topbar">
-      <p class="wordmark"><span aria-hidden="true">♡</span> FOR XINXIN</p>
-      <button class="music-button" id="music-button" type="button" aria-pressed="false" hidden>
-        <span class="music-bars" aria-hidden="true"><i></i><i></i><i></i></span>
-        <span id="music-label">播放音乐</span>
-      </button>
-      <span class="sr-only" id="music-status" aria-live="polite"></span>
-    </header>
-
-    <div class="center-content">
-      <p class="little-title">JUST FOR YOU</p>
-      <h1 id="xinxin-name">欣欣</h1>
-      <p class="heart-caption">遇见你的时候，心动有了形状。</p>
+  <main class="page">
+    <div class="heart-box" aria-hidden="true">
+      <div class="heart"></div>
     </div>
 
-    <section class="love-controls" aria-label="送给欣欣的心动留言">
-      <p class="love-message" id="love-message" aria-live="polite" aria-atomic="true">所有的温柔和心动，都想留给你。</p>
-      <button class="love-button" id="love-button" type="button" hidden>
-        <span id="love-button-label">轻点，开启心动</span>
-        <span class="button-heart" aria-hidden="true">♥</span>
-      </button>
-      <p class="gesture-hint">也可以轻点屏幕，让喜欢多一点</p>
+    <section class="card" aria-labelledby="letter-title">
+      <h1 id="letter-title">致欣欣</h1>
+      <p class="text">
+        欣欣，和你在一起，真的很开心<br>
+        我们不用再小心猜测彼此的心意<br>
+        可以坦坦荡荡地说想你<br>
+        也可以理直气壮地黏着你<br>
+        以后想继续听你分享日常<br>
+        接住你的开心和偶尔的小情绪<br>
+        一起见面、吃饭、散步<br>
+        把每一个平凡的日子<br>
+        都过成属于我们的、小小的浪漫
+      </p>
+      <p class="tip">— 送给我最喜欢的欣欣</p>
+      <div class="audio-box">
+        <button id="music-button" type="button" aria-pressed="false" hidden>
+          <span aria-hidden="true" id="music-symbol">♪</span>
+          <span id="music-label">播放 Dear D</span>
+        </button>
+        <span class="sr-only" id="music-status" aria-live="polite"></span>
+      </div>
     </section>
-
-    <p class="corner-note" aria-hidden="true">A LITTLE HEART, ONLY FOR YOU</p>
-    <audio id="bg-music" src="assets/Dear-D.mp3" loop preload="metadata"></audio>
   </main>
+
+  <div id="falling-hearts" aria-hidden="true"></div>
+  <audio id="bg-music" src="assets/Dear-D.mp3" loop preload="metadata"></audio>
 </body>
 </html>
