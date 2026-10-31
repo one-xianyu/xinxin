@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fffaf4">
+  <meta name="description" content="送给欣欣的 24 岁生日小站：一封手写信，一些心动日常，和刚刚好的温柔祝福。">
+  <title>欣欣，24 岁生日快乐</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23fff4ed'/%3E%3Cpath d='M32 49S12 38 12 24c0-11 14-14 20-5 6-9 20-6 20 5 0 14-20 25-20 25Z' fill='%23c98588'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳到主要内容</a>
+  <div class="ambient" aria-hidden="true">
+    <span class="glow glow-one"></span>
+    <span class="glow glow-two"></span>
+    <span class="doodle-heart doodle-one">♡</span>
+    <span class="doodle-heart doodle-two">♡</span>
+  </div>
+
+  <header class="hero" id="top">
+    <div class="hero-inner">
+      <p class="eyebrow"><span></span> A LITTLE BIRTHDAY NOTE <span></span></p>
+      <div class="age-badge" aria-label="24 岁">
+        <span class="age-number">24</span>
+        <span class="age-unit">岁</span>
+      </div>
+      <h1><span class="hero-name">欣欣，</span><span>24 岁生日快乐</span></h1>
+      <p class="hero-copy">愿你新的一岁，有日常可分享，有期待可奔赴，<br>也有被温柔接住的每一个瞬间。</p>
+      <a class="soft-link" href="#letter-title">有一封信，想给你 <span aria-hidden="true">↓</span></a>
+    </div>
+    <p class="hero-footnote" aria-hidden="true">MADE WITH A LITTLE COURAGE &amp; A LOT OF CARE</p>
+  </header>
+
+  <main id="main-content">
+    <section class="content-section moments" aria-labelledby="moments-title">
+      <header class="section-heading">
+        <p class="section-kicker">LITTLE THINGS</p>
+        <h2 id="moments-title">喜欢，是把你放进日常里</h2>
+        <p>不用每天隆重，细碎的小事也很值得。</p>
+      </header>
+      <div class="moment-grid">
+        <article class="moment-card">
+          <span class="moment-number" aria-hidden="true">01</span>
+          <svg class="moment-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M11 35c5-1 8-4 9-9 1-4 0-9 4-13 5 4 6 9 4 14m-17 8c7 3 18 2 25-4M30 17l5-4m-3 11h6"/></svg>
+          <h3>今天也想告诉你</h3>
+          <p>路边新开的花、吃到的好东西，都想留一份给你。</p>
+        </article>
+        <article class="moment-card">
+          <span class="moment-number" aria-hidden="true">02</span>
+          <svg class="moment-icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="14"/><path d="M24 15v10l7 4M18 6l-3 4m15-4 3 4"/></svg>
+          <h3>把期待留给见面</h3>
+          <p>隔着屏幕说过的话，下次见面再慢慢接着聊。</p>
+        </article>
+        <article class="moment-card">
+          <span class="moment-number" aria-hidden="true">03</span>
+          <svg class="moment-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 38S9 29 9 18c0-7 10-9 15-2 5-7 15-5 15 2 0 11-15 20-15 20Z"/><path d="M16 23h5l2-4 3 8 2-4h4"/></svg>
+          <h3>也期待更多以后</h3>
+          <p>不着急给未来下定义，先认真收藏每一次心动。</p>
+        </article>
+      </div>
+
+      <div class="quote-card">
+        <span class="quote-mark" aria-hidden="true">“</span>
+        <p class="quote-label">今日份心动短句</p>
+        <p class="quote-text" id="quote-text" aria-live="polite" aria-atomic="true">今天的晚霞很好看，第一反应是想分享给你。</p>
+        <div class="quote-actions">
+          <button class="text-button" id="quote-next" type="button" hidden>
+            再读一句 <span aria-hidden="true">↗</span>
+          </button>
+          <button class="pause-button" id="quote-pause" type="button" aria-pressed="false" hidden>暂停轮播</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section letter-section" aria-labelledby="letter-title">
+      <header class="section-heading">
+        <p class="section-kicker">A LETTER FOR YOU</p>
+        <h2 id="letter-title">欣欣，亲启</h2>
+        <p>有些心里话，想郑重地写给你。</p>
+      </header>
+      <div class="letter-paper">
+        <div class="letter-top">
+          <div>
+            <p class="letter-date">FOR YOUR 24TH BIRTHDAY</p>
+            <p class="letter-to">写给今天最可爱的你</p>
+          </div>
+          <span class="stamp" aria-hidden="true">24<small>LOVE</small></span>
+        </div>
+        <button class="letter-toggle" id="letter-toggle" type="button" aria-expanded="true" aria-controls="letter-content" hidden>
+          <span>拆开这封信</span>
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 7 5 5 5-5"/></svg>
+        </button>
+        <div class="letter-content" id="letter-content">
+          <p class="salutation">亲爱的欣欣：</p>
+          <p><strong>24 岁生日快乐。</strong></p>
+          <p>很高兴在这段刚刚好的时光里遇见你。喜欢你之后，平凡的日子好像多了一个值得期待的入口：看到有趣的事想告诉你，路过好吃的小店想和你再来一次。</p>
+          <p>我们也还在慢慢熟悉彼此。不用着急，不用刻意，把每一次分享、每一句晚安和每一次见面，都变成自然而然的心动。</p>
+          <p>新的一岁，愿你做喜欢的事时眼里有光，忙碌的时候也别忘照顾自己。愿你被生活温柔以待，也始终有勇气选择让自己开心的答案。</p>
+          <p>期待下一次见面，也期待你的 24 岁里，有一些快乐刚好与我有关。</p>
+          <div class="signature">
+            <p>愿你的新一岁，轻松、明亮，也有人分享。</p>
+            <p>—— 一个很期待和你继续走下去的人</p>
+          </div>
+        </div>
+        <span class="paper-heart" aria-hidden="true">♡</span>
+      </div>
+    </section>
+
+    <section class="content-section wish-section" aria-labelledby="wish-title">
+      <div class="wish-card">
+        <div class="cake" aria-hidden="true">
+          <svg viewBox="0 0 120 110"><path d="M60 25c-9-9 3-15 2-21 11 9 8 17-2 21Z" class="flame"/><path d="M57 25h6v19h-6z"/><path d="M28 52c0-7 6-12 13-12h38c7 0 13 5 13 12v39H28V52Z"/><path d="M28 58c8 0 8 8 16 8s8-8 16-8 8 8 16 8 8-8 16-8M22 92h76M40 42v9m20-9v9m20-9v9"/></svg>
+        </div>
+        <p class="section-kicker">ONE MORE LITTLE SURPRISE</p>
+        <h2 id="wish-title">再送你一点小小的浪漫</h2>
+        <p class="wish-copy" id="birthday-message" aria-live="polite">新的一岁，愿你喜欢的生活，一点点靠近。</p>
+        <button class="primary-button" id="heart-button" type="button" hidden>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20S3 15 3 8.5C3 4 9 3 12 7c3-4 9-3 9 1.5C21 15 12 20 12 20Z"/></svg>
+          收下生日爱心
+        </button>
+        <p class="tiny-note">点一下，把今天的好心情装进口袋。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span class="footer-heart" aria-hidden="true">♡</span>
+    <p>祝欣欣的 24 岁，平凡的日子也闪闪发光。</p>
+    <a href="#top">回到开头 <span aria-hidden="true">↑</span></a>
+  </footer>
+  <div class="heart-layer" id="heart-layer" aria-hidden="true"></div>
+</body>
+</html>
